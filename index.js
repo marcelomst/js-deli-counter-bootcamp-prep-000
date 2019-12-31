@@ -18,6 +18,6 @@ function currentLine(katzDeliLine){
         message = message + ` ${i+1}. ${katzDeliLine[i]},`;
      }
    }
-   message = 
+   message = message.substring(0,message.length-1)
    return  message
  }
