@@ -9,14 +9,14 @@ function takeANumber(katzDeliLine, personName){
      return `Currently serving ${katzDeliLine.shift()}.`
    }
  }
-  function currentLine(katzDeliLine){
+function currentLine(katzDeliLine){
    if (katzDeliLine.length === 0){
-     return 'The line is currently empty.'
+     return 'The line is currently empty.';
    } else {
-     var message = 
+     var message = `The line is currently:`;
      for (i = 0, i < katzDeliLine.length, i++ ){
-       
+        message = message + ` ${i+1}.${katzDeliLine[i]}`;
      }
-     return `Currently serving ${katzDeliLine.shift()}.`
    }
+   return  message
  }
